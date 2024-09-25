@@ -19,3 +19,7 @@ var romanToInt = function(s) {
 
 
 module.exports={romanToInt}
+it("test case 1", function () {
+    const result = isValid("()");
+    assert.equal(true, result);
+});
