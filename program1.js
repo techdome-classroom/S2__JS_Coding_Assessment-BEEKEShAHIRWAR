@@ -14,7 +14,8 @@ var isValid = function(s) {
         let char = s[i];
 
         if(map[char]){
-            let topElement = stack.length === 0 ? '#'
+            let topElement = stack.length === 0 ? '#' : stack.pop();
+            
         }
     }
 };
