@@ -7,7 +7,7 @@ var romanToInt = function(s) {
     let total = 0;
 
     for (let i = 0; i < s.length - 1; i++) {
-        // Check if the current numeral is less than the next numeral (indicating subtraction)
+  
         if (romanDict[s[i]] < romanDict[s[i + 1]]) {
             total -= romanDict[s[i]];
         } else {
@@ -15,7 +15,7 @@ var romanToInt = function(s) {
         }
     }
 
-    // Add the value of the last numeral in the string
+  
     total += romanDict[s[s.length - 1]];
 
     return total;
