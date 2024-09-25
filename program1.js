@@ -7,7 +7,8 @@ var isValid = function(s) {
 
     let map = {
         ')': '(',
-        ']': ']'
+        ']': ']',
+        
     }
 };
 
