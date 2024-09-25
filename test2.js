@@ -1,7 +1,7 @@
 const { romanToInt } = require("./program2");
 const assert = require("assert");
 
-describe("test cases for problem 2 ", function () {
+describe("romanToInt ", function () {
   it("test case 1", function () {
     const result = romanToInt("III");
     assert.equal(3, result);
