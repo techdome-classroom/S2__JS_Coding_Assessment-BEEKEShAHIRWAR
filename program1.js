@@ -1,38 +1,33 @@
+// program1.js
+
 /**
  * @param {string} s
  * @return {boolean}
  */
-
 var isValid = function(s) {
     let stack = [];
 
     let map = {
         ')': '(',
-        ']': ']',
+        ']': '[',
         '}': '{'
     };
-    for(let i=0;i<s.length;i++){
+
+    for (let i = 0; i < s.length; i++) {
         let char = s[i];
 
-        if(map[char]){
+        if (map[char]) {
             let topElement = stack.length === 0 ? '#' : stack.pop();
-            
-            if(topElement!== map[char]){
+
+            if (topElement !== map[char]) {
                 return false;
             }
-        }else{
+        } else {
             stack.push(char);
         }
     }
 
-    return stack .length === 0;
+    return stack.length === 0;
 };
 
 module.exports = { isValid };
-
-
-
-
-
-   
-
