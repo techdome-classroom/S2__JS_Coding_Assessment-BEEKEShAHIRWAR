@@ -1,5 +1,5 @@
 /**
- * @param {string} s
+ * @param {string} 
  * @return {boolean}
  */
 const {isValid} = require("./program1");
