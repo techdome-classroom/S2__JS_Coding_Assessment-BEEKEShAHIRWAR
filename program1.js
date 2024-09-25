@@ -10,7 +10,7 @@ var isValid = function(s) {
         ']': ']',
         '}': '{'
     };
-    for
+    for(let i=0;i<s.length)
 };
 
 module.exports = { isValid };
