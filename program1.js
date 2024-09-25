@@ -30,9 +30,6 @@ var isValid = function(s) {
 
 module.exports = { isValid };
 
-const {isValid} = require("./program1");
-const assert = require("assert");
-
 
 
 describe("test cases for problem 1 ", function () {
